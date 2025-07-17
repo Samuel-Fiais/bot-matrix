@@ -23,7 +23,7 @@ const CONFIG: AppConfig = {
   homeserverUrl: "https://matrix.org",
   accessToken: "mct_uAN7od0EsTGO0oWy5CsBjGLPXABtrU_XbtEh2",
   webhookUrl:
-    "https://n8n-1gb9.onrender.com/webhook-test/5947c1ee-b200-4159-b205-3a10eeeecd7c",
+    "https://n8n-1gb9.onrender.com/webhook/5947c1ee-b200-4159-b205-3a10eeeecd7c",
   storagePath: "bot.json",
 };
 
