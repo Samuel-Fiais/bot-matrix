@@ -23,14 +23,13 @@ const CONFIG: AppConfig = {
   homeserverUrl: "https://matrix.org",
   accessToken: "mct_uAN7od0EsTGO0oWy5CsBjGLPXABtrU_XbtEh2",
   webhookUrl:
-    "https://n8n-1gb9.onrender.com/webhook/5947c1ee-b200-4159-b205-3a10eeeecd7c",
+    "https://primary-production-9823.up.railway.app/webhook/f47568e5-adc9-43a8-9ef2-de8c95079f18",
   storagePath: "bot.json",
 };
 
 async function sendToWebhook(payload: WebhookPayload): Promise<void> {
   try {
     console.log(`Enviando para o webhook:`, payload);
-    // se o sender for @fiaisbot:matrix.org não envia
     if (payload.sender === "@fiaisbot:matrix.org") {
       console.log("Mensagem do bot, não enviando para o webhook.");
       return;
